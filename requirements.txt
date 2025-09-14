@@ -7,4 +7,3 @@ pydantic==1.10.15
 pydantic[email]==1.10.15
 google-auth==2.35.0
 python-multipart==0.0.9
-pip install fastapi uvicorn[standard] sqlalchemy passlib[bcrypt] python-jose[cryptography] email-validator python-multipart
