@@ -1,3 +1,4 @@
+from __future__ import annotations
 from typing import Optional
 from pydantic import BaseModel, EmailStr
 
@@ -30,3 +31,16 @@ class ResetPasswordIn(BaseModel):
 
 class GoogleAuthRequest(BaseModel):
     credential: str
+
+class User(BaseModel):
+    id: int
+    name: str
+    email: str
+
+class Profile(BaseModel):
+    id: int
+    name: str
+    email: str
+
+Profile.update_forward_refs()
+User.update_forward_refs()
